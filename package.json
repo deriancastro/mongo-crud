@@ -1,11 +1,22 @@
 {
-  "name": "mongo-crud",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "lean-coffee-board",
+  "version": "0.0.1",
+  "description": "",
   "scripts": {
+    "create-user": "node create-user.js 'Test User' 99 'test@testuser.com'",
+    "build:create-user": "npm run shebang:create-user && npm run chmod:create-user",
+    "shebang:create-user": "echo '#!/usr/bin/env node' > bin/create-user && cat create-user.js >> bin/create-user",
+    "chmod:create-user": "chmod +x bin/create-user",
+    "read-users": "node read-users.js",
+    "build:read-users": "npm run shebang:read-users && npm run chmod:read-users",
+    "shebang:read-users": "echo '#!/usr/bin/env node' > bin/read-users && cat read-users.js >> bin/read-users",
+    "chmod:read-users": "chmod +x bin/read-users",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "keywords": [],
+  "author": "Jeremias Erbs <jerry@badabam.de> (https://badabam.de/)",
   "license": "ISC",
-  "description": ""
+  "dependencies": {
+    "mongodb": "3.6.9"
+  }
 }
