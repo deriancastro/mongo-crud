@@ -2,21 +2,6 @@ const express = require('express')
 const router = express.Router()
 const User = require('../models/User')
 
-let usersList = [
-  {
-    name: 'Jane Doe',
-    age: 33,
-    email: 'jane@doe.com',
-    id: '0',
-  },
-  {
-    name: 'John Doe',
-    age: 32,
-    email: 'john@doe.com',
-    id: '1',
-  },
-]
-
 router.get('/', async (req, res, next) => {
   res.json(await User.find())
 })

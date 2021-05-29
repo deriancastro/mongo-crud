@@ -17,20 +17,20 @@ POST http://localhost:4000/api/users
 Content-Type: application/json
 
 {
-  "name": "Max Mustermann",
-  "age": 42,
-  "email": "maxmustermann1979@gmx.de"
+  "name": "Max Munster",
+  "age": 15,
+  "email": "     test@test.com"
 }
 
-### PATCH /api/users/60b101682b25132eadb18552
-PATCH {{baseUrl}}/api/users/60b0025cfb1acd193c240788
+### PATCH /api/users/
+PATCH {{baseUrl}}/api/users/60b225a8a6000e0a7a28b313
 Content-Type: application/json
 
 {
-  "name": "Jack Doe",
-  "email": "jack@doe.com"
+  "name": "Pepe Mojica",
+  "email": "pepe@moji.com"
 }
 
-### DELETE /api/users/60b101682b25132eadb18552
-DELETE {{baseUrl}}/api/users/60b101682b25132eadb18552
+### DELETE /api/users/
+DELETE {{baseUrl}}/api/users/60b21c1a64a49709479821a2
 

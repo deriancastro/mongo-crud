@@ -7,7 +7,7 @@
 GET {{baseUrl}}/api/cards
 
 ### GET /api/cards/:id
-GET {{baseUrl}}/api/cards/0
+GET {{baseUrl}}/api/cards/60b22f4058f0b40bfc222a97
 
 ### GET /api/cards/2000 (should not be found)
 GET {{baseUrl}}/api/cards/2000
@@ -17,18 +17,18 @@ POST http://localhost:4000/api/cards
 Content-Type: application/json
 
 {
-  "text": "Hallo world",
-  "author": "Max Mustermann",
-  "votes": 102
+  "text": "Hi you",
+  "author": "John Doe",
+  "votes": " "
 }
 
 ### PATCH /api/cards/1
-PATCH {{baseUrl}}/api/cards/1
+PATCH {{baseUrl}}/api/cards/60b22f8f58f0b40bfc222a98
 Content-Type: application/json
 
 {
-  "author": "Andres Perez"
+  "author": "Jonas Ballena"
 }
 
 ### DELETE /api/cards/1
-DELETE {{baseUrl}}/api/cards/1
+DELETE {{baseUrl}}/api/cards/60b235aedac0e10d88526641
