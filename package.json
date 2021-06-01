@@ -2,7 +2,9 @@
   "name": "lean-coffee-board",
   "version": "0.0.1",
   "description": "",
+  "main": "server.js",
   "scripts": {
+    "dev": "nodemon server.js",
     "create-user": "node create-user.js 'Test User' 99 'test@testuser.com'",
     "build:create-user": "npm run shebang:create-user && npm run chmod:create-user",
     "shebang:create-user": "echo '#!/usr/bin/env node' > bin/create-user && cat create-user.js >> bin/create-user",
@@ -17,6 +19,14 @@
   "author": "Jeremias Erbs <jerry@badabam.de> (https://badabam.de/)",
   "license": "ISC",
   "dependencies": {
-    "mongodb": "3.6.9"
+    "express": "^5.0.0-alpha.8",
+    "mongodb": "3.6.9",
+    "mongoose": "^5.12.11",
+    "morgan": "1.10.0",
+    "uuid": "8.3.2",
+    "validator": "^13.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.7"
   }
 }
