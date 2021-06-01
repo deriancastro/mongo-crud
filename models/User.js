@@ -5,7 +5,7 @@ const userSchema = {
   name: { type: String, required: true },
   age: {
     type: Number,
-    min: [15, 'You must be at least 15 years old'],
+    min: [16, 'You must be at least 16 years old'],
     required: true,
   },
   email: {

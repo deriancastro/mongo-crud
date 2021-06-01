@@ -18,8 +18,8 @@ Content-Type: application/json
 
 {
   "text": "Hi you",
-  "author": "John Doe",
-  "votes": " "
+  "author": "Derian Castro",
+  "votes": 56
 }
 
 ### PATCH /api/cards/1
